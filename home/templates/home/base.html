@@ -1,0 +1,9 @@
+{% extends "estiquette/base.html" %}
+
+{% block content %}
+    {% for post in posts %}
+        <h1>{{ post.title }}</h1>
+        <p>By {{ post.name }}</p>
+        <p>Username: {{ post.username }}</p>
+    {% endfor %}
+{% endblock content %}
